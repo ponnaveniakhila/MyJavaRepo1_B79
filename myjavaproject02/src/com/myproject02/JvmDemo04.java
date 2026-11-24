@@ -1,7 +1,17 @@
 package com.myproject02;
+//we can create a object in class level and give it static and we can use it any static area to call the instance data members
 
 public class JvmDemo04 {
+	static JvmDemo04 obj1 = new JvmDemo04();
+
+	void method4() {
+		System.out.println("method 4 called");
+	}
+
+// in instance area we can call instance data members directly
 	void method3() {
+
+		method4();
 		System.out.println("method 3 called");
 	}
 
@@ -20,9 +30,9 @@ public class JvmDemo04 {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		JvmDemo04 obj = new JvmDemo04();
-		obj.method1();
+
+		// here we are using the call levle obj1
+		obj1.method1();
 
 	}
 
