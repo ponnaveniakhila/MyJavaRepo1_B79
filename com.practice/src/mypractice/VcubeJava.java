@@ -13,6 +13,7 @@ public class VcubeJava {
 		l.RunIDE();
 		l.compilecode();
 		l.displaydetails();
+		l=null;
 		System.out.println("*********");
 		
 		
@@ -24,7 +25,9 @@ public class VcubeJava {
 		m.makeCall();
 		m.takephoto();
 		m.displaydetails();
+		m=null;
 
 	}
 
 }
+
